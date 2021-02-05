@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropertyInjection", "PropertyInjection\PropertyInjection.csproj", "{3FCA368E-1A38-4A64-A3C0-7F2AAFDE55F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASP.NET-Core3-plus-template", "ASP.NET-Core3-plus-template\ASP.NET-Core3-plus-template.csproj", "{3FCA368E-1A38-4A64-A3C0-7F2AAFDE55F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

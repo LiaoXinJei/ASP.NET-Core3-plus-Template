@@ -1,10 +1,10 @@
-﻿using PropertyInjection.Attribute;
+﻿using DotNetCoreTemplate.Attribute;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PropertyInjection.Models
+namespace DotNetCoreTemplate.Models
 {
     public class ModelA
     {

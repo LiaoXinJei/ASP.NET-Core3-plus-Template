@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using PropertyInjection.Models;
-using PropertyInjection.Services.Interface;
+using DotNetCoreTemplate.Models;
+using DotNetCoreTemplate.Services.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PropertyInjection.WebApi
+namespace DotNetCoreTemplate.WebApi
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -6,16 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PropertyInjection.Attribute;
-using PropertyInjection.Services;
-using PropertyInjection.WebApi;
+using DotNetCoreTemplate.Attribute;
+using DotNetCoreTemplate.Services;
+using DotNetCoreTemplate.WebApi;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Threading.Tasks;
 
-namespace PropertyInjection
+namespace DotNetCoreTemplate
 {
     public class Startup
     {

@@ -1,6 +1,6 @@
 using System;
 
-namespace PropertyInjection.Models
+namespace DotNetCoreTemplate.Models
 {
     public class ErrorViewModel
     {

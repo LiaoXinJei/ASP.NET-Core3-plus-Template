@@ -1,10 +1,10 @@
-﻿using PropertyInjection.Services.Interface;
+﻿using DotNetCoreTemplate.Services.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PropertyInjection.Services
+namespace DotNetCoreTemplate.Services
 {
     public class TestService : ITestService
     {

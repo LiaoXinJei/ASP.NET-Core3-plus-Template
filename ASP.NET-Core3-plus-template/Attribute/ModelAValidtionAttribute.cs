@@ -1,11 +1,11 @@
-﻿using PropertyInjection.Services.Interface;
+﻿using DotNetCoreTemplate.Services.Interface;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PropertyInjection.Attribute
+namespace DotNetCoreTemplate.Attribute
 {
     public class ModelAValidtionAttribute : ValidationAttribute
     {
