@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Services.Interface;
 
 namespace DotNetCoreTemplate.WebApi
 {
@@ -13,19 +14,19 @@ namespace DotNetCoreTemplate.WebApi
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        public ITestService TestService { get; set; }
+        private readonly ITestService _testService;
+        private readonly IUserService _userService;
 
-        private readonly ITestService _t;
-        public ValuesController(ITestService t)
+        public ValuesController(ITestService testService, IUserService userService)
         {
-            _t = t;
+            _testService = testService;
+            _userService = userService;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            var testString = TestService.GetTestString();
-            return Ok(testString);
+            return Ok();
         }
 
         [HttpPost]

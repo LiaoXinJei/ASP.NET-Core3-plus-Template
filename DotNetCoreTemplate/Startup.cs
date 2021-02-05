@@ -30,12 +30,16 @@ namespace DotNetCoreTemplate
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            // services.AddMvc().AddControllersAsServices(); // 若要在Controller中啟用 Property Injection 開啟這段
         }
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            builder.RegisterAssemblyTypes(Assembly.GetExecutingAssembly())
+            var assemblies = new Assembly[]
+            {
+                Assembly.Load("DotNetCoreTemplate"),
+                Assembly.Load("Services")
+            };
+            builder.RegisterAssemblyTypes(assemblies)
                 .Where(x => (x.Name.EndsWith("Service") || x.Name.EndsWith("Repository")) && !x.IsInterface)
                 .AsImplementedInterfaces()
                 .InstancePerLifetimeScope();
