@@ -10,7 +10,7 @@ namespace DotNetCoreTemplate.Repository.MsSql.Repository
 {
     public class MsSqlGenericRepository<T> : GenericRepository<T>, IMsSqlGenericRepository<T> where T : BaseEntity, new()
     {
-        public MsSqlGenericRepository(IDbType dbType, ISqlQuery sqlQuery) : base(dbType, sqlQuery)
+        public MsSqlGenericRepository(IMsSql dbType, IMsSqlSqlQuery sqlQuery) : base(dbType, sqlQuery)
         {
         }
     }

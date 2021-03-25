@@ -12,7 +12,6 @@ namespace DotNetCoreTemplate.Dapper.Repositories
         private readonly IDbType _dbType;
         private readonly ISqlQuery _sqlQuery;
         private readonly Type _repositoryType;
-        // TODO: 待注入DbType
         public GenericRepository(IDbType dbType, ISqlQuery sqlQuery)
         {
             _dbType = dbType;
