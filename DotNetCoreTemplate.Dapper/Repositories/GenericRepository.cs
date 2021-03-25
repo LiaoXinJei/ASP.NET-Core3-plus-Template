@@ -12,6 +12,7 @@ namespace DotNetCoreTemplate.Dapper.Repositories
         private readonly IDbType _dbType;
         private readonly ISqlQuery _sqlQuery;
         private readonly Type _repositoryType;
+        // TODO: 待注入DbType
         public GenericRepository(IDbType dbType, ISqlQuery sqlQuery)
         {
             _dbType = dbType;
@@ -66,9 +67,9 @@ namespace DotNetCoreTemplate.Dapper.Repositories
 
         public void Update(T entity)
         {
-            // TODO: get by id
-            var sql = _sqlQuery.GetUpdateClause(_repositoryType); 
-            DapperExcute(sql, entity);
+            var sql = _sqlQuery.GetUpdateClause(entity);
+            var whereClause = _sqlQuery.GetWhereClause(new { Id = entity.Id });
+            DapperExcute(sql + whereClause, entity);
         }
 
         private IEnumerable<T> DapperQuery(string sql, object param = null)

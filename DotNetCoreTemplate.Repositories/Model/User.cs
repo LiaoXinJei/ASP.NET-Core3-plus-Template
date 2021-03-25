@@ -1,4 +1,4 @@
-﻿using DotNetCoreTemplate.Repository.DbBase;
+﻿using DotNetCoreTemplate.Dapper;
 using System;
 using System.Collections.Generic;
 using System.Text;

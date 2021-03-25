@@ -9,7 +9,7 @@ namespace DotNetCoreTemplate.Dapper.Interfaces
         string GetDeleteClause(Type type);
         string GetWhereClause(object obj);
         string GetSelectClause(Type type);
-        string GetInsertClause(Type repositoryType);
-        string GetUpdateClause(Type repositoryType);
+        string GetInsertClause(Type type);
+        string GetUpdateClause<T>(T entity) where T : BaseEntity;
     }
 }

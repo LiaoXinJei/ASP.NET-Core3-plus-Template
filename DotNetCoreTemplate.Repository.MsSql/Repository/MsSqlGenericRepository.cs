@@ -1,4 +1,5 @@
-﻿using DotNetCoreTemplate.Dapper.Interfaces;
+﻿using DotNetCoreTemplate.Dapper;
+using DotNetCoreTemplate.Dapper.Interfaces;
 using DotNetCoreTemplate.Dapper.Repositories;
 using DotNetCoreTemplate.Repository.MsSql.Interface;
 using System;
@@ -7,9 +8,9 @@ using System.Text;
 
 namespace DotNetCoreTemplate.Repository.MsSql.Repository
 {
-    public class MsSqlGenericRepositor<T> : GenericRepository<T>, IMsSqlGenericRepository<T> where T : class, new()
+    public class MsSqlGenericRepository<T> : GenericRepository<T>, IMsSqlGenericRepository<T> where T : BaseEntity, new()
     {
-        public MsSqlGenericRepositor(IDbType dbType, ISqlQuery sqlQuery) : base(dbType, sqlQuery)
+        public MsSqlGenericRepository(IDbType dbType, ISqlQuery sqlQuery) : base(dbType, sqlQuery)
         {
         }
     }

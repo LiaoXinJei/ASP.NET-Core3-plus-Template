@@ -9,4 +9,9 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.8.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DotNetCoreTemplate.Dapper\DotNetCoreTemplate.Dapper.csproj" />
+    <ProjectReference Include="..\DotNetCoreTemplate.Repository.MsSql\DotNetCoreTemplate.Repository.MsSql.csproj" />
+  </ItemGroup>
+
 </Project>
