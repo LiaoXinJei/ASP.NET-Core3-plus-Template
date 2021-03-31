@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DotNetCoreTemplate.Services\DotNetCoreTemplate.Service.csproj" />
+    <ProjectReference Include="..\DotNetCoreTemplate.Service\DotNetCoreTemplate.Service.csproj" />
   </ItemGroup>
 
 </Project>
