@@ -3,6 +3,7 @@ using DotNetCoreTemplate.Repository.Attributes;
 using DotNetCoreTemplate.Repository.DbBase;
 using DotNetCoreTemplate.Repository.Interface;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -53,7 +54,16 @@ namespace DotNetCoreTemplate.Repository.Repositories
 
             var param = obj.GetType()
                 .GetProperties()
-                .Select(x => $"{x.Name} = @{x.Name}");
+                .Select(x => {
+                    if(typeof(IEnumerable).IsAssignableFrom(x.PropertyType))
+                    {
+                        return $"{x.Name} IN @{x.Name}";
+                    }
+                    else
+                    {
+                        return $"{x.Name} = @{x.Name}";
+                    }
+                });
             var whereClause = string.Join(" AND ", param);
 
             var sql = select + whereClause;

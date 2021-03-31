@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.Reposito
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.Core", "DotNetCoreTemplate.Core\DotNetCoreTemplate.Core.csproj", "{6F049BFF-09B5-405D-9150-03620257F11C}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.Autofac", "DotNetCoreTemplate.Autofac\DotNetCoreTemplate.Autofac.csproj", "{1ACAA7BF-FC4F-4E18-AF3D-A8147E9C03CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.NLog", "DotNetCoreTemplate.NLog\DotNetCoreTemplate.NLog.csproj", "{8F650226-EBEF-4AF5-AA90-A2FE86A6377E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{6F049BFF-09B5-405D-9150-03620257F11C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6F049BFF-09B5-405D-9150-03620257F11C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6F049BFF-09B5-405D-9150-03620257F11C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1ACAA7BF-FC4F-4E18-AF3D-A8147E9C03CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1ACAA7BF-FC4F-4E18-AF3D-A8147E9C03CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1ACAA7BF-FC4F-4E18-AF3D-A8147E9C03CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1ACAA7BF-FC4F-4E18-AF3D-A8147E9C03CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F650226-EBEF-4AF5-AA90-A2FE86A6377E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F650226-EBEF-4AF5-AA90-A2FE86A6377E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F650226-EBEF-4AF5-AA90-A2FE86A6377E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F650226-EBEF-4AF5-AA90-A2FE86A6377E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
