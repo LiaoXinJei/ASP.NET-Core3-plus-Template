@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DotNetCoreTemplate.Repository.MsSql
+namespace DotNetCoreTemplate.MsSql
 {
     public interface IMsSql : IDbType
     {

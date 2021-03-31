@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DotNetCoreTemplate.Repository.MsSql.Interface
+namespace DotNetCoreTemplate.MsSql.Interface
 {
     public interface IMsSqlGenericRepository<T> where T : class
     {

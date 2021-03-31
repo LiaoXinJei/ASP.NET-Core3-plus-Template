@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DotNetCoreTemplate.Dapper\DotNetCoreTemplate.Dapper.csproj" />
-    <ProjectReference Include="..\DotNetCoreTemplate.Repository.MsSql\DotNetCoreTemplate.Repository.MsSql.csproj" />
+    <ProjectReference Include="..\DotNetCoreTemplate.MsSql\DotNetCoreTemplate.MsSql.csproj" />
   </ItemGroup>
 
 </Project>

@@ -4,7 +4,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Text;
 
-namespace DotNetCoreTemplate.Repository.MsSql
+namespace DotNetCoreTemplate.MsSql
 {
     public class MsSql : IMsSql
     {

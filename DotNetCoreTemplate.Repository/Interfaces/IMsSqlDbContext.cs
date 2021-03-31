@@ -1,5 +1,5 @@
 ﻿using DotNetCoreTemplate.Repository.Model;
-using DotNetCoreTemplate.Repository.MsSql.Interface;
+using DotNetCoreTemplate.MsSql.Interface;
 using System;
 using System.Collections.Generic;
 using System.Text;

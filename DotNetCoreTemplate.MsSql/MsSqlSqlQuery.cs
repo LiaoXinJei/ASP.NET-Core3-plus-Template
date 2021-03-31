@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace DotNetCoreTemplate.Repository.MsSql
+namespace DotNetCoreTemplate.MsSql
 {
     public class MsSqlSqlQuery : IMsSqlSqlQuery
     {
