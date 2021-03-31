@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using DotNetCoreTemplate.Api.ApiModels;
-using DotNetCoreTemplate.Api.ApiServices.Interface;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -12,13 +11,6 @@ namespace DotNetCoreTemplate.Api.ApiControllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
             return View();

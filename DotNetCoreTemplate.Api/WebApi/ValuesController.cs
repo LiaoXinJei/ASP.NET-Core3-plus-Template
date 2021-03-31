@@ -1,12 +1,11 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using DotNetCoreTemplate.Api.ApiModels;
-using DotNetCoreTemplate.Api.ApiServices.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Services.Interface;
+using DotNetCoreTemplate.Service.Interface;
 
 namespace DotNetCoreTemplate.Api.ApiWebApi
 {
@@ -14,18 +13,17 @@ namespace DotNetCoreTemplate.Api.ApiWebApi
     [ApiController]
     public class ValuesController : ControllerBase
     {
-        private readonly ITestService _testService;
         private readonly IUserService _userService;
 
-        public ValuesController(ITestService testService, IUserService userService)
+        public ValuesController(IUserService userService)
         {
-            _testService = testService;
             _userService = userService;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
+            _userService.GetAll();
             return Ok();
         }
 

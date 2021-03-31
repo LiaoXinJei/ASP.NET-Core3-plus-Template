@@ -12,6 +12,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DotNetCoreTemplate.Autofac\DotNetCoreTemplate.Autofac.csproj" />
+    <ProjectReference Include="..\DotNetCoreTemplate.NLog\DotNetCoreTemplate.NLog.csproj" />
     <ProjectReference Include="..\DotNetCoreTemplate.Service\DotNetCoreTemplate.Service.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DotNetCoreTemplate.Repository.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +9,6 @@ namespace DotNetCoreTemplate.Service.Interface
 {
     public interface IUserService
     {
+        IEnumerable<User> GetAll();
     }
 }

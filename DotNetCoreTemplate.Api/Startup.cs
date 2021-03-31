@@ -1,19 +1,10 @@
 using Autofac;
-using Autofac.Extensions.DependencyInjection;
+using DotNetCoreTemplate.Autofac;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using DotNetCoreTemplate.Api.Attribute;
-using DotNetCoreTemplate.Api.Services;
-using DotNetCoreTemplate.Api.WebApi;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection;
-using System.Threading.Tasks;
 
 namespace DotNetCoreTemplate.Api
 {
@@ -34,16 +25,7 @@ namespace DotNetCoreTemplate.Api
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            var assemblies = new Assembly[]
-            {
-                Assembly.Load("DotNetCoreTemplate"),
-                Assembly.Load("Services"),
-                Assembly.Load("Repository")
-            };
-            builder.RegisterAssemblyTypes(assemblies)
-                .Where(x => (x.Name.EndsWith("Service") || x.Name.EndsWith("Repository")) && !x.IsInterface)
-                .AsImplementedInterfaces()
-                .InstancePerLifetimeScope();
+            builder.RegisterAssemblies();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
