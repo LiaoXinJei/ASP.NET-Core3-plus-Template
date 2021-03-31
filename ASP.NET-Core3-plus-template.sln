@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.28307.1231
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.Api", "DotNetCoreTemplate.Api\DotNetCoreTemplate.Api.csproj", "{3FCA368E-1A38-4A64-A3C0-7F2AAFDE55F9}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.Service", "DotNetCoreTemplate.Services\DotNetCoreTemplate.Service.csproj", "{2F6B8E98-1F1A-458D-A807-7A6048FDFEE2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.Service", "DotNetCoreTemplate.Service\DotNetCoreTemplate.Service.csproj", "{2F6B8E98-1F1A-458D-A807-7A6048FDFEE2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.Repository", "DotNetCoreTemplate.Repositories\DotNetCoreTemplate.Repository.csproj", "{67A7E433-21FC-48A5-AC96-42998D13BDA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.Repository", "DotNetCoreTemplate.Repository\DotNetCoreTemplate.Repository.csproj", "{67A7E433-21FC-48A5-AC96-42998D13BDA4}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreTemplate.Core", "DotNetCoreTemplate.Core\DotNetCoreTemplate.Core.csproj", "{6F049BFF-09B5-405D-9150-03620257F11C}"
 EndProject
